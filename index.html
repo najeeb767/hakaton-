@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+    <!-- <a class="navbar-brand" href="index.html"><img src="./images/Shop.png" alt="Shop Logo"> -->
+      <img src="shop.png" alt="" width="30px" height="30px">
+Shop</a>
+    <div class="ms-auto d-flex align-items-center">
+      <input id="searchInput" type="text" placeholder="Search products..." class="form-control me-2">
+      <button id="toggleTheme" class="btn btn-outline-secondary">🌙</button>
+      <a href="cart.html" class="btn btn-primary ms-2">Cart</a>
+    </div>
+  </nav>
+
+  <!-- Price Filter -->
+  <div class="container my-3">
+    <label for="priceRange" class="form-label">Filter by Price: $<span id="priceValue">0</span></label>
+    <input type="range" class="form-range" min="0" max="1000" step="10" id="priceRange">
+  </div>
+
+  <!-- Products -->
+  <div class="container">
+    <div class="row" id="productsContainer"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
